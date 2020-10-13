@@ -1,0 +1,11 @@
+<block wx:if="{{$taroCompReady}}">
+    <form bindsubmit="formSubmit1">
+        <view class="index"><text>版本号为001\n\n</text><text>当前wifi：{{SSID}}</text>
+            <view><text>请输入密码</text>
+                <input name="password" style="{{anonymousState__temp}}" />
+            </view>
+            <button form-type="submit">下一步</button>
+        </view>
+        <button bindtap="gotoPanel">测试页面跳转</button>
+    </form>
+</block>

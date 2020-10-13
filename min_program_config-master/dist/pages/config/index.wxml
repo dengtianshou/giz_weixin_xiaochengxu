@@ -1,0 +1,7 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index">
+        <block wx:if="{{isRun === false}}"><text>请连接到wifi XPG-GAgent-***</text>
+        </block>
+        <block wx:if="{{isRun && devices.length === 0}}"><text>正在发现设备</text>
+        </block>{{anonymousState__temp}}</view>
+</block>
