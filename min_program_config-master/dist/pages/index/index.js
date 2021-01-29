@@ -123,8 +123,14 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
                 userData = _context.sent;
 
                 console.log('userData', userData);
+                console.log('index里面的token');
+                console.log('用户token为：', userData.data.token);
+                console.log('index里面的uid');
+                console.log('用户uid为：', userData.data.uid);
+                console.log('index里面data为：', userData.data);
                 (0, _global.setGlobalData)('token', userData.data.token);
-                (0, _global.setGlobalData)('uid', uid);
+                // setGlobalData('uid', uid)
+                (0, _global.setGlobalData)('uid', userData.data.uid);
                 wx.startWifi({
                   success: function success(res) {
                     console.log(res.errMsg, 'wifi初始化成功');
@@ -135,7 +141,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
                   }
                 });
 
-              case 8:
+              case 13:
               case "end":
                 return _context.stop();
             }
@@ -201,10 +207,10 @@ Component(__webpack_require__(/*! @tarojs/taro-weapp */ "./node_modules/@tarojs/
 
 /***/ }),
 
-/***/ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=D:\\word_project\\wx_xiaochengxu\\test\\update_20200927\\min_program_config-master\\min_program_config-master\\src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/index/index.tsx?taro&type=template&parse=PAGE&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=D:/word_project/wx_xiaochengxu/test/update_20200927/min_program_config-master/min_program_config-master/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./src/pages/index/index.tsx?taro&type=template&parse=PAGE& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=D:\\word_project\\wx_xiaochengxu\\github\\xiaochenxu_and_websocket\\giz_weixin_xiaochengxu\\min_program_config-master\\src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/index/index.tsx?taro&type=template&parse=PAGE&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=D:/word_project/wx_xiaochengxu/github/xiaochenxu_and_websocket/giz_weixin_xiaochengxu/min_program_config-master/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./src/pages/index/index.tsx?taro&type=template&parse=PAGE& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -266,9 +272,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_test_update_20200927_min_program_config_master_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!file-loader?name=[path][name].wxml&context=D:/word_project/wx_xiaochengxu/test/update_20200927/min_program_config-master/min_program_config-master/src!../../../node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!../../../node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./index.tsx?taro&type=template&parse=PAGE& */ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=D:\\word_project\\wx_xiaochengxu\\test\\update_20200927\\min_program_config-master\\min_program_config-master\\src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/index/index.tsx?taro&type=template&parse=PAGE&");
-/* harmony import */ var _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_test_update_20200927_min_program_config_master_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_test_update_20200927_min_program_config_master_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_test_update_20200927_min_program_config_master_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_test_update_20200927_min_program_config_master_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_github_xiaochenxu_and_websocket_giz_weixin_xiaochengxu_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!file-loader?name=[path][name].wxml&context=D:/word_project/wx_xiaochengxu/github/xiaochenxu_and_websocket/giz_weixin_xiaochengxu/min_program_config-master/src!../../../node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!../../../node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./index.tsx?taro&type=template&parse=PAGE& */ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=D:\\word_project\\wx_xiaochengxu\\github\\xiaochenxu_and_websocket\\giz_weixin_xiaochengxu\\min_program_config-master\\src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/index/index.tsx?taro&type=template&parse=PAGE&");
+/* harmony import */ var _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_github_xiaochenxu_and_websocket_giz_weixin_xiaochengxu_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_github_xiaochenxu_and_websocket_giz_weixin_xiaochengxu_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_github_xiaochenxu_and_websocket_giz_weixin_xiaochengxu_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _file_loader_name_path_name_wxml_context_D_word_project_wx_xiaochengxu_github_xiaochenxu_and_websocket_giz_weixin_xiaochengxu_min_program_config_master_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_PAGE___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -308,7 +314,7 @@ var AnonymousLogin = exports.AnonymousLogin = function () {
               method: 'POST',
               header: {
                 'content-type': 'application/json',
-                'X-Gizwits-Application-Id': 'cc33c0a6a8104e2fa9d83a221d680dfc'
+                'X-Gizwits-Application-Id': 'fbdb4a6934a44bdbb0658147429aac8d'
               }
             });
 

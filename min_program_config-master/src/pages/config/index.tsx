@@ -32,16 +32,21 @@ class Index extends Component {
     // 获取当前连接wifi
     const { SSID, password, pk, ps } = this.$router.params;
     const token = getGlobalData("token");
-    const uid = getGlobalData("uid");
 
+    const uid = getGlobalData("uid");
+    console.log('config里面的token')
+    console.log( 'token',token)
+
+    console.log('config里面的uid')
+    console.log( 'uid',uid)
     // 增加匿名登录
     const sdk = new GizwitsSdk({
-      appID: 'cc33c0a6a8104e2fa9d83a221d680dfc',
-      appSecret: '0fb30ccaac5c4f558eed6205e431683a',
+      appID: 'fbdb4a6934a44bdbb0658147429aac8d',
+      appSecret: '5bf62381871d4a37ba314cafffb0be16',
       // specialProductKeys: [pk],
       // specialProductKeySecrets: [ps],
-      specialProductKeys: ['104a789c553e4d639bc03b27b5e489b5'],
-      specialProductKeySecrets: ['6ed9a31fb13c4ab1af0e346fc48adee0'],
+      specialProductKeys: ['af9c220080a04c568086407448ea36a1'],
+      specialProductKeySecrets: ['de159b5f690b4f6cae85bc6361e5851c'],
       token: token,
       uid: uid,
       cloudServiceInfo: null,
@@ -99,10 +104,10 @@ class Index extends Component {
         {
           devices.length > 0 && devices.map(item => {
           // return <Text>{item.did}</Text> 
-            // return <Text>{"设备mac为:"+item.mac}</Text> 
-            Taro.navigateTo({
-              url: `/pages/new/index`,
-            });
+            return <Text>{"设备mac为:"item.mac}</Text> 
+            // Taro.navigateTo({
+            //   url: `/pages/new/index`,
+            // });
             
           })
         }

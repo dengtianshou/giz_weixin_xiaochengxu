@@ -35,8 +35,14 @@ class Index extends Component {
     const uid = '7a90c0abba3b4af18b1056c1e8981178';
     const userData = await AnonymousLogin({ uid });
     console.log('userData', userData);
+    console.log('index里面的token')
+    console.log('用户token为：',userData.data.token)
+    console.log('index里面的uid')
+    console.log('用户uid为：',userData.data.uid)
+    console.log('index里面data为：',userData.data)
     setGlobalData('token', userData.data.token)
-    setGlobalData('uid', uid)
+    // setGlobalData('uid', uid)
+    setGlobalData('uid', userData.data.uid)
 
     wx.startWifi({
       success(res){
@@ -105,7 +111,7 @@ class Index extends Component {
         <View className='index'>
 
         <Text>
-            版本号为001\n\n
+            版本号为008\n\n
         </Text>
         {/* <Input name='pk' style={{ border: '1px solid #000' }}></Input> */}
           {/* <Text>

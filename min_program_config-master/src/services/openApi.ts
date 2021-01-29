@@ -9,7 +9,7 @@ export async function AnonymousLogin ({uid}) {
     method: 'POST',
     header: {
       'content-type': 'application/json',
-      'X-Gizwits-Application-Id': 'cc33c0a6a8104e2fa9d83a221d680dfc'
+      'X-Gizwits-Application-Id': 'fbdb4a6934a44bdbb0658147429aac8d'
     }
   })
 }

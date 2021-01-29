@@ -3,5 +3,8 @@
         <block wx:if="{{isRun === false}}"><text>请连接到wifi XPG-GAgent-***</text>
         </block>
         <block wx:if="{{isRun && devices.length === 0}}"><text>正在发现设备</text>
-        </block>{{anonymousState__temp}}</view>
+        </block>
+        <block wx:if="{{devices.length > 0}}"><text wx:for="{{devices}}" wx:for-item="item" wx:for-index="_anonIdx2">{{"设备mac为:"}}item.mac}</text>
+        </block>
+    </view>
 </block>
