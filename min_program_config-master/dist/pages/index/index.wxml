@@ -1,6 +1,6 @@
 <block wx:if="{{$taroCompReady}}">
     <form bindsubmit="formSubmit1">
-        <view class="index"><text>版本号为008\n\n</text><text>当前wifi：{{SSID}}</text>
+        <view class="index"><text>版本号为005\n\n</text><text>当前wifi：{{SSID}}</text>
             <view><text>请输入密码</text>
                 <input name="password" style="{{anonymousState__temp}}" />
             </view>
