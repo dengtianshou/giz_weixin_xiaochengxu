@@ -64,7 +64,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["loopArray63", "isRun", "devices", "dev_map_txt"], _this.gotoPanel_2 = function (e) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["loopArray67", "isRun", "devices", "dev_map_txt"], _this.gotoPanel_2 = function (e) {
       _taroWeapp2.default.navigateTo({
         url: "/pages/new/index"
       });
@@ -207,7 +207,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
 
       var dev_key;
       var dev_map_txt = "";
-      var loopArray63 = devices.length > 0 ? devices.map(function (item, _anonIdx) {
+      var loopArray67 = devices.length > 0 ? devices.map(function (item, _anonIdx) {
         item = {
           $original: (0, _taroWeapp.internal_get_original)(item)
         };
@@ -228,7 +228,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       // });
       ) : [];
       Object.assign(this.__state, {
-        loopArray63: loopArray63,
+        loopArray67: loopArray67,
         dev_map_txt: dev_map_txt
       });
       return this.__state;
