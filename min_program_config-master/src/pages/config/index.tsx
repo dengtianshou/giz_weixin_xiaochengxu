@@ -6,6 +6,7 @@ import GizwitsSdk from 'mini_program_gizwits_sdk';
 
 import './index.scss'
 import { getGlobalData } from '../../utils/global';
+import { isObject } from 'mobx/lib/utils/utils';
 
 type PageStateProps = {
   counterStore: {
@@ -91,6 +92,9 @@ class Index extends Component {
 
   render() {
     const { devices, isRun } = this.state;
+    var dev_key;
+    var dev_map_txt = "";
+
     return (
       <View className='index'>
         {
@@ -104,7 +108,17 @@ class Index extends Component {
         {
           devices.length > 0 && devices.map(item => {
           // return <Text>{item.did}</Text> 
-            return <Text>{"设备mac为:"item.mac}</Text> 
+            for(dev_key in item){
+              //设备对象字典里面的key和vule获取
+              // txt_vule  +=  item[x] + " ; " + "\n"  ;
+              // txt_key += x + " ; " +"\n" ;
+              dev_map_txt += dev_key + " : " + item[dev_key] + "," + " \n";
+            }
+            return <Text>
+            设备mac为：{item.mac} \n
+            设备did为：{item.did} \n\n
+            设备对象内容：\n {dev_map_txt} \n
+            </Text> 
             // Taro.navigateTo({
             //   url: `/pages/new/index`,
             // });
