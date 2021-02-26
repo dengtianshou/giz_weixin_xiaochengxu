@@ -4,7 +4,7 @@
         </block>
         <block wx:if="{{isRun && devices.length === 0}}"><text>正在发现设备</text>
         </block>
-        <block wx:if="{{devices.length > 0}}"><text wx:for="{{loopArray67}}" wx:for-item="item" wx:for-index="_anonIdx2">设备mac为：{{item.$original.mac}} \n设备did为：{{item.$original.did}} \n\n设备对象内容：\n {{dev_map_txt}} \n</text>
+        <block wx:if="{{devices.length > 0}}"><text wx:for="{{loopArray1}}" wx:for-item="item" wx:for-index="_anonIdx2">设备mac为：{{item.$original.mac}} \n设备did为：{{item.$original.did}} \n\n设备对象内容：\n {{dev_map_txt}} \n</text>
         </block>
     </view>
 </block>

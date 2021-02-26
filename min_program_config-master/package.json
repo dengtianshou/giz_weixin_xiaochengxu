@@ -45,7 +45,7 @@
     "@tarojs/taro-weapp": "2.1.0",
     "babel-runtime": "^6.26.0",
     "isomorphic-fetch": "^2.1.0",
-    "mini_program_gizwits_sdk": "^2.0.7",
+    "mini_program_gizwits_sdk": "^2.0.8-rc.1",
     "mobx": "4.8.0",
     "nerv-devtools": "^1.5.5",
     "nervjs": "^1.5.5",

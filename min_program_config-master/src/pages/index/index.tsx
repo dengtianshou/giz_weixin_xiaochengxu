@@ -111,7 +111,7 @@ class Index extends Component {
         <View className='index'>
 
         <Text>
-            版本号为005\n\n
+            版本号为007\n\n
         </Text>
         {/* <Input name='pk' style={{ border: '1px solid #000' }}></Input> */}
           {/* <Text>
